@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 3fr;
+            height: 100vh;
+            
+        }
+        .content
+        {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+        .inner{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 2fr 1fr;
+        }
+        #box{
+            background-color: rgb(249, 252, 48);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav" id="box">nav</div>
+        <div class="content">
+            <div class="header" id="box">header</div>
+            <div class="inner">
+                <div class="article" id="box">article</div>
+                <div class="ads" id="box">ads</div>
+            </div>
+            <div class="footer" id="box">footer</div>
+        </div>
+    </div>
+</body>
+</html>
