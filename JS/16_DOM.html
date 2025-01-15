@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <ul id="element">
+           <li class="list"></li>
+           <li class="list"></li>
+           <li class="list"></li>
+        </ul>
+        <tr>
+            <td>one</td>
+            <td>one</td>
+            <td>one</td>
+        </tr>
+        <tr>
+            <td>two</td>
+            <td>two</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>three</td>
+            <td>three</td>
+        </tr>
+    </table>
+    <script>
+        console.log(document.body.children[1]);
+        const tb =document.body.children[1];
+        console.log(tb.tBodies[0].children[0].style="background-color:blue")
+        console.log(tb.tBodies[0].children[1].style="background-color:green")
+        console.log(tb.tBodies[0].children[2].style.backgroundColor="red")
+
+        console.log("");
+        console.log("");
+        console.log("");
+
+        
+        // //ID select
+        element.style.background = "red" ;
+        //Finding element by ID
+        const ultag=document.getElementById("element");
+        ultag.style.backgroundColor='yellow';
+
+        //by class
+
+        const listItem=document.getElementsByClassName("list");
+        console.log(listItem);
+        // listItem.style.backgroundColor="red";
+        console.log(document.getElementsByTagName("table"));
+        const tb1=document.getElementsByTagName("table");
+        
+        
+    </script>
+</body>
+</html>
