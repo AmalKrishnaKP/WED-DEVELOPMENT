@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST try</title>
+    <link rel="stylesheet" href="list.css">
+    <style>
+        .new{
+    color: red !important;
+    font-size: large;
+    font-weight: bolder !important;
+}
+
+/* while usins !important the priority goes to 10000 */
+ul#first li {
+    color: black;
+    font-size: 20px;
+    font-weight:lighter;
+
+}
+    </style>
+</head>
+<body>
+    <p>
+        <hr>
+        Lorem <br> <b>ipsum dolor sit, amet consectetur adipisicing elit</b>. <i> Excepturi autem quidem</i>, <em>fugiat corrupti tempora veritatis</em> numquam nisi eveniet inventore sint a et nihil reiciendis accusamus sequi cupiditate nam temporibus aspernatur.
+    </p>
+    <p>
+        <ol type="I">
+            <li>first</li>
+            <li>second</li>
+            <li>third
+                <ul id="first">
+                    <li>nested one</li>
+                    <li class="new">nested two</li>
+                    <li>nested three</li>
+                </ul>
+            </li>
+            <li>forth
+                <ol type="1">
+                    <li>neated one</li>
+                    <li>nested teo</li>
+                    <li>nested three</li>
+                </ol>
+            </li>
+        </ol>
+    </p>
+</body>
+</html>
