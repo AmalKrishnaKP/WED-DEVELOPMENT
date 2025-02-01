@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2
+        {
+            width: 100px;
+            height: 100px;
+
+        }
+        .box1{
+            margin: 10px;
+            background-color: blue;
+        }
+        /* background color not in margin */
+        .box2{
+            padding: 10px;
+            background-color: yellow;
+        }
+        /* background color  in padding */
+        .total{
+            background-color: brown;
+        }
+        /* backgound color of the total will come to the margin of the box1 */
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div class="box1">BOX1</div> 
+        <div class="box2">BOX2</div>
+    </div>
+</body>
+</html>
